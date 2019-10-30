@@ -26,11 +26,9 @@ footer.p {
 
 .intro {
   border-radius: 15px;
-
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-
   margin-right: auto;
   margin-left: auto;
   width: 75%;
@@ -69,8 +67,8 @@ body {
 .about {
     justify-content: center;
     min-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--off-white);
@@ -86,6 +84,29 @@ body {
     justify-content: left;
     line-height: 15px;
     font-style: italic;
+}
+
+a{
+  color: var(--project_color);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent_color);
+  text-decoration: underline dotted;
+}
+
+a:active {
+  color: var(--light_gray);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -104,8 +125,8 @@ body {
 .columnl {
     float: left;
     width: 50%;
-    border-radius: 2rem;
     margin-left: 2%;
+    border-radius: 10px 70px;
 }
 .columnr
 {
