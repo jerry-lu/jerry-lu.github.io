@@ -70,7 +70,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 15px;
-    font-size: 17px;
+    font-size: 16px;
     background-color: var(--off-white);
     box-shadow: 10px 10px var(--accent_color);
     line-height: 30pt;
@@ -91,7 +91,7 @@ a{
 }
 
 a:link {
-  text-decoration: none;
+  color: var(--accent_color);
 }
 
 a:visited {
