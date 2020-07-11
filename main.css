@@ -109,17 +109,6 @@ a:active {
   text-decoration: underline;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymovel {
-  from {margin-left: 0%;}
-  to {margin-left: 40%;}
-}
-
-@-webkit-keyframes mymover {
-  from {margin-right: 0%;}
-  to {margin-right: 40%;}
-}
-
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .columnl {
@@ -152,7 +141,11 @@ a:active {
     box-shadow: 0 50vh 0vh 50vh var(--light_gray);
 }
 
-.footer a {
+.links {
+  position: absolute;
+  right: 7em;
+}
+.links a {
   color: var(--project_color);
   text-decoration: none;
 }
