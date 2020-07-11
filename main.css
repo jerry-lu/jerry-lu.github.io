@@ -2,7 +2,7 @@
 :root {
   --project_color:#3B402B;
   --accent_color :#6D7358;
-  --off-white:#F2F2F2;
+  --off-white:#F0F0F0;
   --light_gray:#D9D9D9;
   --medium_gray:#A6A6A6;
 }
@@ -21,7 +21,7 @@ footer.p {
 }
 
 .spacer {
-    height: 30px;
+    height: 20px;
 }
 
 .intro {
@@ -38,6 +38,10 @@ footer.p {
 body {
     padding: 10px;
     background-color:white;
+}
+
+svg {
+  fill: var(--project_color);
 }
 
 /* Header/Blog Title */
@@ -69,7 +73,7 @@ body {
     min-height: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 16px;
     background-color: var(--off-white);
     box-shadow: 10px 10px var(--accent_color);
@@ -109,18 +113,18 @@ a:active {
   text-decoration: underline;
 }
 
-/* Create two unequal columns that floats next to each other */
+/* Create two unequal columns that float next to each other */
 /* Left column */
 .columnl {
     float: left;
-    width: 50%;
+    width: 55%;
     margin-left: 2%;
-    border-radius: 10px 70px;
+    border-radius: 20px 60px;
 }
 .columnr
 {
     float: right;
-    width: 40%;
+    width: 35%;
     margin-right: 2%;
     box-shadow: 10px 10px var(--medium_gray);
 }
@@ -155,7 +159,29 @@ a:active {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-device-width: 800px) {
+  .columnl, .columnr {
+    width: 97%;
+    padding: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .columnl {
+    margin-left: 1.5%;
+    margin-top: 20px;
+    animation-duration: 0s;
+  }
+  .columnr {
+    margin-right: 1.5%;
+    margin-top: 20px;
+    animation-duration: 0s;
+  }
+  .intro {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
   .columnl, .columnr {
     width: 97%;
     padding: 0px;
