@@ -20,6 +20,10 @@ footer.p {
   box-sizing: border-box;
 }
 
+p{
+  margin-top: 0px;
+}
+
 .spacer {
     height: 20px;
 }
@@ -98,7 +102,7 @@ a:link {
   color: var(--accent_color);
 }
 
-a:visited {
+a:visited, h3 a {
   text-decoration: none;
 }
 
@@ -159,29 +163,7 @@ a:active {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-device-width: 800px) {
-  .columnl, .columnr {
-    width: 97%;
-    padding: 0px;
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-  .columnl {
-    margin-left: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
-  }
-  .columnr {
-    margin-right: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
-  }
-  .intro {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 880px) {
+@media only screen and (max-device-width: 800px), only screen and (max-width: 880px) {
   .columnl, .columnr {
     width: 97%;
     padding: 0px;
