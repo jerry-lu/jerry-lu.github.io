@@ -3,8 +3,12 @@
   --project_color:#3B402B;
   --accent_color :#6D7358;
   --off-white:#F0F0F0;
+  --nearly-white:#FFFCFF;
+  --pale-green: #CFD3C5;
   --light_gray:#D9D9D9;
   --medium_gray:#A6A6A6;
+  --queen-blue:#3E6990;
+  --rosewood:#5E0B15;
 }
 
 h1, h2, h3, h4, h5, h6, p, body {
@@ -41,7 +45,7 @@ p{
 
 body {
     padding: 10px;
-    background-color:white;
+    background-color: var(--nearly-white);
 }
 
 svg {
@@ -54,7 +58,7 @@ svg {
     padding-bottom: 15px;
     padding-left: 30px;
     text-align: left;
-    background: var(--light_gray);
+    background: var(--pale-green);
     font-size: 18px; 
     line-height: 20pt;
     position: fixed;
@@ -94,6 +98,9 @@ svg {
     font-style: italic;
 }
 
+p.a {
+  color: var(--accent_color);
+}
 a{
   color: var(--project_color);
 }
@@ -112,7 +119,6 @@ a:hover {
 }
 
 a:active {
-  color: var(--light_gray);
   background-color: transparent;
   text-decoration: underline;
 }
@@ -124,13 +130,14 @@ a:active {
     width: 55%;
     margin-left: 2%;
     border-radius: 20px 60px;
+    box-shadow: 10px 10px var(--queen-blue);
 }
 .columnr
 {
     float: right;
     width: 35%;
     margin-right: 2%;
-    box-shadow: 10px 10px var(--medium_gray);
+    box-shadow: 10px 10px var(--accent_color);
 }
 
 /* Clear floats after the columns */
@@ -140,14 +147,6 @@ a:active {
   clear: both;
 }
 
-.footer {
-    padding: 1px;
-    text-align: center;
-    background: var(--light_gray);
-    margin-top: 20px;
-    width: 100%;
-    box-shadow: 0 50vh 0vh 50vh var(--light_gray);
-}
 
 .links {
   position: absolute;
@@ -163,7 +162,7 @@ a:active {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-device-width: 800px), only screen and (max-width: 880px) {
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
   .columnl, .columnr {
     width: 97%;
     padding: 0px;
