@@ -1,4 +1,3 @@
-
 :root {
   --project_color:#3B402B;
   --accent_color :#6D7358;
@@ -11,41 +10,33 @@
   --rosewood:#5E0B15;
 }
 
-h1, h2, h3, h4, h5, h6, p, body {
-    font-family: "Open Sans", sans-serif;
-    color: var(--project_color);
+p, body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--project_color);
+  font-size: 16px;
 }
 
-footer.p {
-    font-size: 10px;
+p {
+  margin-top: 10px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-p{
-  margin-top: 0px;
-}
-
 .spacer {
-    height: 20px;
+  height: 20px;
 }
 
 .intro {
-  border-radius: 15px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
   width: 75%;
-  justify-content: center;
 }
 
 body {
-    padding: 10px;
-    background-color: var(--nearly-white);
+  padding: 10px;
+  background-color: var(--nearly-white);
 }
 
 svg {
@@ -54,67 +45,59 @@ svg {
 
 /* Header/Blog Title */
 .header {
-    padding-top: 18px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    text-align: left;
-    background: var(--pale-green);
-    font-size: 18px; 
-    line-height: 20pt;
-    position: fixed;
-    top: 0px;
-    width: 105%;
-    margin-left: -20px;
+  padding: 18px 0px 14px 36px;
+  background: var(--pale-green);
+  font-size: 18px; 
+  line-height: 20pt;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 
-.header h1, h2, h3, h4 {
-    display: inline;
-    font-family: "Playfair Display", serif;
+h1, h2, h3, h4 {
+  display: inline;
+  font-family: "Playfair Display", serif;
 }
 
-.main_home {
-    margin-top: 60px;
+.home {
+  margin-top: 60px;
 }
 
 .about {
-    justify-content: center;
-    min-height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20px;
-    font-size: 16px;
-    background-color: var(--off-white);
-    box-shadow: 10px 10px var(--accent_color);
-    line-height: 30pt;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    overflow: hidden;
+  padding: 10px 30px 5px 30px;
+  border-radius: 20px;
+  background-color: var(--off-white);
+  box-shadow: 10px 10px var(--accent_color);
+  line-height: 26pt;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .about h2 {
-    display: grid;
-    justify-content: left;
-    line-height: 15px;
-    font-style: italic;
+  display: grid;
+  line-height: 14pt;
+  font-style: italic;
 }
 
-p.a {
-  color: var(--accent_color);
-}
 a{
   color: var(--project_color);
 }
 
-a:link {
+p a, a:link, a:hover {
   color: var(--accent_color);
 }
 
-a:visited, h3 a {
+a:hover svg {
+  fill: var(--accent_color);
+}
+
+a:visited, h3 a, .links a, .links a:hover{
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--accent_color);
   text-decoration: underline dotted;
 }
 
@@ -126,18 +109,19 @@ a:active {
 /* Create two unequal columns that float next to each other */
 /* Left column */
 .columnl {
-    float: left;
-    width: 55%;
-    margin-left: 2%;
-    border-radius: 20px 60px;
-    box-shadow: 10px 10px var(--queen-blue);
+  float: left;
+  width: 55%;
+  margin-left: 2%;
+  border-radius: 20px 60px;
+  box-shadow: 10px 10px var(--queen-blue);
 }
+
 .columnr
 {
-    float: right;
-    width: 35%;
-    margin-right: 2%;
-    box-shadow: 10px 10px var(--accent_color);
+  float: right;
+  width: 35%;
+  margin-right: 2%;
+  box-shadow: 10px 10px var(--accent_color);
 }
 
 /* Clear floats after the columns */
@@ -147,18 +131,9 @@ a:active {
   clear: both;
 }
 
-
 .links {
   position: absolute;
-  right: 7em;
-}
-.links a {
-  color: var(--project_color);
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: var(--accent_color);
+  right: 6%;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -172,12 +147,10 @@ a:active {
   .columnl {
     margin-left: 1.5%;
     margin-top: 20px;
-    animation-duration: 0s;
   }
   .columnr {
     margin-right: 1.5%;
     margin-top: 20px;
-    animation-duration: 0s;
   }
   .intro {
     width: 90%;
