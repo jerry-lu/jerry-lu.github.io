@@ -1,8 +1,9 @@
 :root {
   --project_color:#3B402B;
   --accent_color :#6D7358;
-  --off-white:#F0F0F0;
-  --nearly-white:#FFFCFF;
+  --new-green: #545A42;
+  --off-white:#F2F2F2;
+  --nearly-white:#FFFFFC;
   --pale-green: #BCC2AE;
   --light_gray:#D9D9D9;
   --medium_gray:#A6A6A6;
@@ -16,26 +17,28 @@ p, body {
   font-size: 16px;
 }
 
-p {
-  margin-top: 10px;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.spacer {
-  height: 20px;
+.intro {
+  padding: 4% 0% 2% 2.5%;
+  text-align: left;
+  width: 70%;
+  background-color: var(--nearly-white);
 }
 
-.intro {
-  margin-right: auto;
-  margin-left: auto;
-  width: 75%;
+.intro p {
+  font-size: 32px;
+  color: var(--project_color);
+}
+
+.intro h1{
+  font-size: 36px;
+  font-style: italic;
 }
 
 body {
-  padding: 10px;
   background-color: var(--nearly-white);
 }
 
@@ -45,8 +48,8 @@ svg {
 
 /* Header/Blog Title */
 .header {
-  padding: 18px 0px 14px 36px;
-  background: var(--pale-green);
+  padding: 1.5% 0% 1.5% 4%;
+  background: var(--nearly-white);
   font-size: 18px; 
   line-height: 20pt;
   position: fixed;
@@ -62,6 +65,7 @@ h1, h2, h3, h4 {
 
 .home {
   margin-top: 60px;
+  padding: 1%;
 }
 
 .about {
@@ -70,9 +74,8 @@ h1, h2, h3, h4 {
   background-color: var(--off-white);
   box-shadow: 10px 10px var(--accent_color);
   line-height: 26pt;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  overflow: hidden;
+  width: 80%;
+  margin: 20px auto 20px auto;
 }
 
 .about h2 {
@@ -93,15 +96,11 @@ a:hover svg {
   fill: var(--accent_color);
 }
 
-a:visited, h3 a, .links a, .links a:hover{
+a:link, a:visited, h3 a, .links a, .links a:hover{
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline dotted;
-}
-
-a:active {
+a:active, a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
